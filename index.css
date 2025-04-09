@@ -1,0 +1,358 @@
+/* General Styling */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa; /* Light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* Login Container */
+.login-container {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  text-align: center;
+}
+
+/* Heading */
+.login-container h2 {
+  color: #008080 !important; /* Teal color */
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Button Styling */
+.login-btn {
+  width: 100%;
+  background-color: #008080; /* Teal color */
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #006666; /* Darker teal */
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  .login-container {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+/* Virtual Office Styling */
+.virtual-office-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.virtual-office-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 450px;
+  text-align: center;
+}
+
+/* Title */
+.virtual-office-title {
+  color: teal;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.virtual-office-label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  text-align: left;
+}
+
+/* Radio Options */
+.virtual-office-options {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 10px;
+}
+
+.virtual-office-radio {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.virtual-office-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Buttons */
+.virtual-office-buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.virtual-office-btn {
+  background: teal;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  flex: 1;
+  margin: 5px;
+  text-align: center;
+}
+
+.virtual-office-btn:hover {
+  background: #007c7c;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-title {
+  color: teal;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  font-weight: bold;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.modal-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-send-btn {
+  background: teal;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .virtual-office-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .virtual-office-buttons {
+    flex-direction: column;
+  }
+
+  .virtual-office-btn {
+    width: 100%;
+  }
+}
+/* Container */
+.employee-joining-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1e1e1e; /* Dark background */
+}
+
+/* Card */
+.employee-joining-card {
+  background: white;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+/* Header */
+.employee-header {
+  background: #2f8d89;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+/* Login/Signup */
+.employee-login {
+  font-size: 14px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Title */
+.employee-joining-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Form Labels */
+.employee-label {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Input Fields */
+.employee-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  background: #d3cdcd;
+}
+
+/* Upload Image Box */
+.employee-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid #2f8d89;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+/* Button */
+.employee-button {
+  background: #2f8d89;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  display: block;
+  width: 150px;
+  text-align: center;
+}
+
+.employee-button:hover {
+  background: #257872;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .employee-joining-card {
+    width: 90%;
+    padding: 20px;
+  }
+}
